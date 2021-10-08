@@ -4,7 +4,7 @@
 # include <unistd.h>
 #elif defined _WIN32
 # include <windows.h>
-#define sleep(x) Sleep(0.01 * (x))
+#define sleep(x) Sleep(10 * (x))
 #endif
 int main(void)
 {
