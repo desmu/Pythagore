@@ -11,9 +11,11 @@ int main(void)
     int len[2];
     int bc;
     char *cote[3]= {"AB","BC"};
+    int count;
     do
     {
         bc=1;
+        count=0;
         for(int i=0; i<2; i++)
         {
             printf("Cote %s en cm : \n",cote[i]);
@@ -36,9 +38,13 @@ int main(void)
             {
                 bc+=(len[1]/len[0]);
             }
-            else if((i % (len[0]/len[1])==0) && bc<len[1])
+            else
             {
-                bc++;
+                count++;
+                if(count>=(len[0]/len[1])){
+                    bc++;
+                    count=0;
+                }
             }
         }
     }
