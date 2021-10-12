@@ -18,7 +18,7 @@ int main(void)
         count=0;
         for(int i=0; i<2; i++)
         {
-            printf("Cote %s en cm : \n",cote[i]);
+            printf("Cote %s en cm (0 pour sortir): \n",cote[i]);
             scanf(" %i",&len[i]);
             if(len[i]==0)
             {
