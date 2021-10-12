@@ -39,7 +39,7 @@ int main(void)
         {
             for(int j=0; j<bc; j++)
             {
-                sleep(1);
+                //sleep(1);
                 printf("#");
             }
             printf("\n");
