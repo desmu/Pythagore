@@ -44,7 +44,7 @@ int main(void)
         float dist=1;
         for(float i=0; i<len[0]; i++)
         {
-            if(len[0]>len[1])
+            if(len[0]>=len[1])
             {
                 for(float j=0; j<len[1]; j++)
                 {
